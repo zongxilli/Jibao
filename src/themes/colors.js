@@ -1,8 +1,10 @@
+import { theme } from 'twin.macro';
+
 export const LightColors = {
 	overlay: 'rgba(0, 0, 0, 0.3)',
 
-	whiteDefault: '#ffffff',
-	blackDefault: '#000000',
+	whiteDefault: theme`colors.white`,
+	blackDefault: theme`colors.black`,
 
 	// SEMANTIC colors
 	// system: backgrounds that are truly behind everything
