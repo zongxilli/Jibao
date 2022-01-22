@@ -1,10 +1,14 @@
 import { theme } from 'twin.macro';
 
 export const LightColors = {
+	twText: theme`colors.neutral.900`,
+	twBackground: theme`colors.indigo.50`,
+	twIndigo: theme`colors.indigo.400`,
+
 	overlay: 'rgba(0, 0, 0, 0.3)',
 
-	whiteDefault: theme`colors.white`,
-	blackDefault: theme`colors.black`,
+	whiteDefault: '#ffffff',
+	blackDefault: '#000000',
 
 	// SEMANTIC colors
 	// system: backgrounds that are truly behind everything
@@ -59,6 +63,10 @@ export const LightColors = {
 };
 
 export const DarkColors = {
+	twText: theme`colors.indigo.50`,
+	twBackground: theme`colors.neutral.900`,
+	twIndigo: theme`colors.indigo.500`,
+
 	overlay: 'rgba(0, 0, 0, 0.5)',
 
 	whiteDefault: '#E4E4E4',
