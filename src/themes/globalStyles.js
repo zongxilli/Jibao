@@ -4,7 +4,10 @@ import { createGlobalStyle } from 'styled-components';
 import { GlobalStyles as BaseStyles } from 'twin.macro';
 
 const CustomStyles = createGlobalStyle`
-    * {
+
+  * {
+    transition: background-color 0.3s linear;
+
     // scroll behaviour
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch; // only supported by iOS
