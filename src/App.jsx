@@ -7,7 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import { useSelector } from 'react-redux';
 
 import { getTheme, GlobalStyles } from './themes';
-import { Example } from './pages';
+import { Home, Sandbox } from './pages';
 
 const App = () => {
 	const location = useLocation();
@@ -23,7 +23,8 @@ const App = () => {
 
 	const renderRoutes = () => (
 		<Routes location={location} key={location.pathname}>
-			<Route exact path='/' element={<Example />} />
+			<Route exact path='/' element={<Sandbox />} />
+			<Route exact path='/home' element={<Home />} />
 		</Routes>
 	);
 

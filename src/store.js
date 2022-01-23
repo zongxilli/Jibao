@@ -1,7 +1,8 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import themeReducer from './reducers/theme/themeReducer';
+
+import { themeReducer } from './reducers';
 
 const reducer = combineReducers({
 	theme: themeReducer,

@@ -1,11 +1,11 @@
 import React from 'react';
 import { withTheme } from 'styled-components';
 
-import { Page, Button, HeaderWrapper, TextSpan } from './example.styles';
+import { Page, Button, HeaderWrapper, TextSpan } from './sandbox.styles';
 
 import { useThemeSwitch } from '../../hooks';
 
-const Example = () => {
+const Sandbox = () => {
 	const switchTheme = useThemeSwitch();
 
 	return (
@@ -18,4 +18,4 @@ const Example = () => {
 	);
 };
 
-export default withTheme(Example);
+export default withTheme(Sandbox);

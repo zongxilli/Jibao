@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { changeTheme } from '../actions/theme/themeActions';
+import { changeTheme } from '../actions';
 
 const useThemeSwitch = () => {
 	const dispatch = useDispatch();

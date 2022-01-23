@@ -1,3 +1,4 @@
-import Example from './example/example';
+import Sandbox from './sandbox/sandbox';
+import Home from './home/home.container';
 
-export { Example };
+export { Sandbox, Home };
