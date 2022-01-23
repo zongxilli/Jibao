@@ -1,4 +1,3 @@
-// src/styles/GlobalStyles.js
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 import { GlobalStyles as BaseStyles } from 'twin.macro';
@@ -6,7 +5,8 @@ import { GlobalStyles as BaseStyles } from 'twin.macro';
 const CustomStyles = createGlobalStyle`
 
   * {
-    transition: background-color 0.3s linear;
+    transition: color 1.5s ease-in-out;
+    transition: background-color 1.5s ease-in-out;
 
     // scroll behaviour
     scroll-behavior: smooth;
