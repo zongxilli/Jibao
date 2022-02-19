@@ -1,33 +1,37 @@
 import GlobalStyles from './globalStyles';
 import { LightColors, DarkColors } from './colors';
 import Fonts from './fonts';
+import Icons from './icons';
 
 const getTheme = (themeName) => {
 	switch (themeName) {
 		case 'light':
 			return {
-				name: 'light',
+				mode: 'light',
 				colors: LightColors,
 				fonts: Fonts,
+				icons: Icons,
 				images: null,
 			};
 
 		case 'dark':
 			return {
-				name: 'light',
+				mode: 'light',
 				colors: DarkColors,
 				fonts: Fonts,
+				icons: Icons,
 				images: null,
 			};
 
 		default:
 			return {
-				name: 'light',
+				mode: 'light',
 				colors: LightColors,
 				fonts: Fonts,
+				icons: Icons,
 				images: null,
 			};
 	}
 };
 
-export { GlobalStyles, getTheme, LightColors, DarkColors, Fonts };
+export { GlobalStyles, getTheme, LightColors, DarkColors, Fonts, Icons };
