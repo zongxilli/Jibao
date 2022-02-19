@@ -1,6 +1,10 @@
 const Fonts = {
-	clash: "font-family: 'Clash Display', sans-serif;",
-	fira: "font-family: 'Fira Code', monospace;",
+  clash: "'Clash Display', sans-serif",
+  fira: "'Fira Code', monospace",
+  hachi: "'Hachi Maru Pop', cursive",
+
+  // for Chinese
+  kuaile: " 'ZCOOL KuaiLe', cursive",
 };
 
 export default Fonts;
