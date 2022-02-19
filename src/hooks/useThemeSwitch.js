@@ -3,10 +3,10 @@ import { changeTheme } from '../actions';
 
 const useThemeSwitch = () => {
 	const dispatch = useDispatch();
-	const { name } = useSelector((state) => state.theme);
+	const { mode } = useSelector((state) => state.theme);
 
 	const switchTheme = () => {
-		dispatch(changeTheme(name === 'light' ? 'dark' : 'light'));
+		dispatch(changeTheme(mode === 'light' ? 'dark' : 'light'));
 	};
 
 	return switchTheme;

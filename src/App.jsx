@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { AnimatePresence } from 'framer-motion';
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import ReactTooltip from 'react-tooltip';
 import { ToastContainer } from 'react-toastify';
 import { useSelector } from 'react-redux';
@@ -11,7 +11,7 @@ import { Home, Sandbox } from './pages';
 
 const App = () => {
 	const location = useLocation();
-	const { name } = useSelector((state) => state.theme);
+	const { mode } = useSelector((state) => state.theme);
 
 	const renderGlobalComponents = () => (
 		<>
@@ -22,17 +22,17 @@ const App = () => {
 	);
 
 	const renderRoutes = () => (
-		<Routes location={location} key={location.pathname}>
-			<Route exact path='/' element={<Sandbox />} />
-			<Route exact path='/home' element={<Home />} />
-		</Routes>
+		<Switch location={location} key={location.pathname}>
+			<Route exact path='/' component={Sandbox} />
+			<Route exact path='/home' component={Home} />
+		</Switch>
 	);
 
 	return (
 		<>
 			{renderGlobalComponents()}
 
-			<ThemeProvider theme={getTheme(name)}>
+			<ThemeProvider theme={getTheme(mode)}>
 				<AnimatePresence exitBeforeEnter>
 					{renderRoutes()}
 				</AnimatePresence>

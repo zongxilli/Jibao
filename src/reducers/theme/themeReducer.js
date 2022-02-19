@@ -5,7 +5,7 @@ const themeReducer = (state = initialState, { type, payload }) => {
 		case 'SWITCH_THEME':
 			return {
 				...state,
-				name: payload,
+				mode: payload,
 			};
 
 		default:
