@@ -16,7 +16,7 @@ const getTheme = (themeName) => {
 
 		case 'dark':
 			return {
-				mode: 'light',
+				mode: 'dark',
 				colors: DarkColors,
 				fonts: Fonts,
 				icons: Icons,
