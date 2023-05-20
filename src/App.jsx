@@ -24,8 +24,8 @@ const App = () => {
 
 	const renderRoutes = () => (
 		<Switch location={location} key={location.pathname}>
-			<Route exact path='/' component={Sandbox} />
-			<Route exact path='/home' component={Home} />
+			<Route exact path='/' component={Home} />
+			<Route exact path='/sandbox' component={Sandbox} />
 		</Switch>
 	);
 
